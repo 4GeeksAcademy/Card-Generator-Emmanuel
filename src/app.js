@@ -17,6 +17,10 @@ let button = document.querySelector(".btn");
 button.addEventListener("click", generateCard);
 
 function generateCard() {
+  ejecutarCodigo();
+}
+
+function ejecutarCodigo() {
   let randomNum = numbers[Math.floor(Math.random() * numbers.length)];
   let randomIcon = icons[Math.floor(Math.random() * icons.length)];
   simbolTop.innerHTML = randomIcon.key;
@@ -25,3 +29,4 @@ function generateCard() {
   simbolBot.style.color = randomIcon.color;
   cardNumber.innerHTML = randomNum;
 }
+setInterval(ejecutarCodigo, 10000);
