@@ -42,7 +42,7 @@ function saveSize() {
 }
 
 size.addEventListener("click", function saveSize() {
-  if (inputt.value < 150) inputt.value = 150;
+  if (inputt.value < 140) inputt.value = 140;
   card.style.width = inputt.value + "px";
   card.style.height = inputt.value * 1.47 + "px";
 });
