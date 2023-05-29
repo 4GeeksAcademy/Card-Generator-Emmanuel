@@ -42,6 +42,11 @@ function saveSize() {
 }
 
 size.addEventListener("click", function saveSize() {
+  if (inputt.value < 150) inputt.value = 150;
   card.style.width = inputt.value + "px";
   card.style.height = inputt.value * 1.47 + "px";
+});
+
+card.addEventListener("click", function() {
+  card.classList.toggle("flipped");
 });

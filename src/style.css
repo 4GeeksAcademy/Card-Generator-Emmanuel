@@ -5,6 +5,8 @@ body {
 }
 
 .card {
+  transition: transform 0.5s ease;
+  perspective: 1000px;
   background-color: #fff;
   width: 300px;
   height: 440px;
@@ -13,6 +15,14 @@ body {
   position: relative;
   border-radius: 15px;
   box-shadow: 5px 10px 10px 10px rgba(0, 18, 2, 0.3);
+}
+
+.card img {
+  transform: scaleX(-1);
+  margin-top: 20%;
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
 }
 
 .simbol {
@@ -91,4 +101,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card .front {
+  transform: rotateY(0deg);
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.card.flipped .front {
+  transform: rotateY(-180deg);
+}
+
+.card.flipped .back {
+  transform: rotateY(0deg);
+}
+.card.flipped {
+  transform: rotateY(-180deg);
 }
