@@ -8,8 +8,8 @@ body {
   transition: transform 0.5s ease;
   perspective: 1000px;
   background-color: #fff;
-  width: 300px;
-  height: 440px;
+  width: 250px;
+  height: 368px;
   margin: auto;
   margin-top: 4rem;
   position: relative;
@@ -47,6 +47,13 @@ body {
   align-items: center;
   padding-top: 50%;
   font-size: 75px;
+}
+
+#myButtonFixed {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .btn-posit {
@@ -98,7 +105,7 @@ body {
   border-radius: 5px;
   width: 200px;
   height: 30px;
-  box-shadow: 5px 5px 5px 3px rgba(0, 18, 2, 0.3);
+  box-shadow: 5px 5px 5px 5px rgba(0, 80, 9, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
