@@ -29,14 +29,14 @@ body {
 .simbol {
   position: absolute;
   top: 5px;
-  left: 15px;
+  left: 10px;
   font-size: 75px;
 }
 
 .simbol2 {
   position: absolute;
   bottom: 5px;
-  right: 15px;
+  right: 10px;
   font-size: 75px;
   transform: rotate(180deg);
 }
@@ -129,5 +129,5 @@ body {
 }
 .card.flipped {
   transform: rotateY(-180deg);
-  box-shadow: 5px 10px 10px 10px #00ff804d;
+  box-shadow: 10px 10px 10px 10px #00ff804d;
 }
