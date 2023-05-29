@@ -13,6 +13,9 @@ let simbolTop = document.querySelector(".simbol");
 let simbolBot = document.querySelector(".simbol2");
 let cardNumber = document.querySelector(".number");
 let button = document.querySelector(".btn");
+let card = document.querySelector(".card");
+let size = document.querySelector(".size");
+let inputt = document.querySelector(".inp");
 
 button.addEventListener("click", generateCard);
 
@@ -30,3 +33,15 @@ function ejecutarCodigo() {
   cardNumber.innerHTML = randomNum;
 }
 setInterval(ejecutarCodigo, 10000);
+
+function saveSize() {
+  inputt.addEventListener("change", function() {
+    let userInput = inputt.value;
+    return userInput;
+  });
+}
+
+size.addEventListener("click", function saveSize() {
+  card.style.width = inputt.value + "px";
+  card.style.height = inputt.value * 1.47 + "px";
+});

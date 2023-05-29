@@ -6,8 +6,8 @@ body {
 
 .card {
   background-color: #fff;
-  width: 250px;
-  height: 400px;
+  width: 300px;
+  height: 440px;
   margin: auto;
   margin-top: 4rem;
   position: relative;
@@ -34,7 +34,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 150px;
+  padding-top: 50%;
   font-size: 75px;
 }
 
@@ -59,4 +59,36 @@ body {
 .btn:hover {
   color: white;
   background-color: black;
+  cursor: pointer;
+}
+.btn-size {
+  position: absolute;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 200px;
+  height: 30px;
+  box-shadow: 5px 5px 5px 3px rgba(0, 18, 2, 0.3);
+}
+
+.btn-size:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.inp {
+  position: absolute;
+  background-color: rgb(255, 254, 254);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  box-shadow: 5px 5px 5px 3px rgba(0, 18, 2, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
